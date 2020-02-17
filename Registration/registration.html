@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>ACM Programming Contest Registration</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Registration for ACM" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="registration.css" />
+
+</head>
+
+<body>
+    <!-- <div id="banner">
+        <div id="banner-alert"></div>
+    </div> -->
+    <article role="main">
+        <h1>ACM Programming Contest Registration</h1>
+        <div class="row mb-3">
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <h2>Instructor Information</h2>
+                <div class="form-group"> <label id="form_firstname_label" for="form_firstname" class="required">First
+                        Name</label> <input id="form_firstname" name="form_firstname" type="text"
+                        class="form-control" /> </div>
+                <div class="form-group"> <label id="form_middlename_label" for="form_middlename">Middle
+                        Name</label> <input id="form_middlename" name="form_middlename" type="text"
+                        class="form-control" /> </div>
+                <div class="form-group"> <label id="form_lastname_label" for="form_lastname" class="required">Last
+                        Name</label> <input id="form_lastname" name="form_lastname" type="text" class="form-control" />
+                </div>
+                <div class="form-group"> <label id="form_email_label" for="form_email" class="required">Email
+                        Address</label> <input id="form_email" name="form_email" type="text" class="form-control" />
+                </div>
+                <div class="form-group"> <label id="form_cellphone_label" for="form_cellphone" class="required">
+                        Phone Number</label> <input id="form_cellphone" name="form_cellphone" type="text"
+                        class="form-control" /> </div>
+                <div class="form-group"> <label id="school_name_label" for="school_name" class="required">What
+                        school are you representing?</label>: <input id="school_name" name="school_name" type="text"
+                        class="form-control" /> </div>
+            </div>
+            <div class="col-sm-6">
+                <h2>Mailing Address</h2>
+                <div class="form-group"> <label id="form_street1_label" for="form_street1" class="required">Street
+                        1</label> <input id="form_street1" name="form_street1" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label id="form_street2_label" for="form_street2">Street 2</label>
+                    <input id="form_street2" name="form_street2" type="text" class="form-control" /></div>
+                <div class="form-group">
+                    <label id="form_city_label" for="form_city" class="required">City</label>
+                    <input id="form_city" name="form_city" type="text" class="form-control" /> </div>
+                <div class="form-group">
+                    <label id="form_state_label" for="form_state" class="required">State/Province</label>
+                    <input id="form_state" name="form_state" type="text" class="form-control" /> </div>
+                <div class="form-group">
+                    <label id="form_zip_label" for="form_zip" class="required">ZIP/Postal Code</label>
+                    <input id="form_zip" name="form_zip" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label id="form_country_label" for="form_country" class="required">Country</label>
+                    <input id="form_country" name="form_country" type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <h2>Participant Information</h2>
+                <h3>Participant 1</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p1_name_label" for="p1_name" class="required">Name</label>
+                    <input id="p1_name" name="p1_name" type="text" class="form-control" /> </div>
+                <div class="form-group">
+                    <label id="p1_email_label" for="p1_email" class="required">Email Address</label>
+                    <input id="p1_email" name="p1_email" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p1_classyear_label" for="p1_classyear" class="required">Class Year</label>
+                    <select id="p1_classyear" name="p1_classyear" class="form-control">
+                        <option value="">Select</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <h3>Participant 2</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p2_name_label" for="p2_name" class="required">Name</label>
+                    <input id="p2_name" name="p2_name" type="text" class="form-control" /> </div>
+                <div class="form-group">
+                    <label id="p2_email_label" for="p2_email" class="required">Email Address</label>
+                    <input id="p2_email" name="p2_email" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p2_classyear_label" for="p2_classyear" class="required">Class Year</label>
+                    <select id="p2_classyear" name="p2_classyear" class="form-control">
+                        <option value="">Select</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                    </select> </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <h3>Participant 3</h3>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p3_name_label" for="p3_name" class="required">Name</label>
+                    <input id="p3_name" name="p3_name" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label id="p3_email_label" for="p3_email" class="required">Email Address</label>
+                    <input id="p3_email" name="p3_email" type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label id="p3_classyear_label" for="p3_classyear" class="required">Class Year</label>
+                    <select id="p3_classyear" name="p3_classyear" class="form-control">
+                        <option value="">Select</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophomore">Sophomore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <h2>Team Needs</h2>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <p class="required">Language Preference:</p>
+                <div class="form-check">
+                    <input id="preference1" name="preference[]" type="checkbox" class="form-check-input" value="Java" />
+                    <label id="preference1_label" for="preference1" class="form-check-label">Java</label> </div>
+                <div class="form-check"> <input id="preference2" name="preference[]" type="checkbox"
+                        class="form-check-input" value="Python" /> <label id="preference2_label" for="preference2"
+                        class="form-check-label">Python</label> </div>
+                <div class="form-check"> <input id="preference3" name="preference[]" type="checkbox"
+                        class="form-check-input" value="C/C++" /> <label id="preference3_label" for="preference3"
+                        class="form-check-label">C/C++</label> </div>
+                <div class="form-check"> <input id="preference4" name="preference[]" type="checkbox"
+                        class="form-check-input" value="Other" /> <label id="preference4_label" for="preference4"
+                        class="form-check-label">Other Languages</label> </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label id="specialneeds_label" for="specialneeds">Previous Experience
+                    </label>
+                    <textarea id="Experience" name="specialneeds" rows="5" class="form-control"></textarea> </div>
+            </div>
+        </div>
+        <input id="form_id" name="form_id" type="hidden" value="1352842265" /> <button id="submits" type="submit"
+            class="btn btn-stetson">Submit</button>
+        </form>
+    </article>
+</body>
+
+</html>
